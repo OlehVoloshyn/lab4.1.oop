@@ -1,0 +1,23 @@
+﻿#include "pch.h"
+#include "CppUnitTest.h"
+#include "../lab.4.1/Line.cpp"
+#include "../lab.4.1/Line.h"
+#include "../lab.4.1/Curves.h"
+#include "../lab.4.1/Curves.cpp"
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace UnitTest1
+{
+	TEST_CLASS(UnitTest1)
+	{
+	public:
+		
+		TEST_METHOD(TestMethod1)
+		{
+			Line a(1,2,5);
+			int b  = a.y();
+			Assert::AreEqual(b, 7);
+		}
+	};
+}
